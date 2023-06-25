@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <img src="./imagens/Logoestige.png.png" alt="Imagem" width="50" height="50">
+              <img src="./imagens/Logoestige.png.png" alt="Imagem" width="40px" height="40px">
                 <a class="navbar-brand" href="https://pt.wikipedia.org/wiki/Estige">Estige MotoSport</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -35,42 +35,51 @@
             </div>
         </nav>
     </header>
-    <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" "carousel slide carousel-fade">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+     <!-- Carousel -->
+    <h1 class="titulo-meio">Destaques da semana</h1>
+    <div class="container-carrossel">
+        <div id="carouselExampleIndicators" class="carousel slide" "carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <!-- Primeiro Slide -->
+            <div class="carousel-inner carrossel">
+                <div class="carousel-item active">
+                    <a href="https://motortudo.com/maverick-1974-ano-em-que-a-industria-automobilistica-pegou-fogo/"
+                        target="_blank"><img src="https://motortudo.com/wp-content/uploads/2022/07/maverick-1974-4.webp"
+                            class="d-block w-100" alt="Maverick"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://carroesporteclube.com.br/capa/tudo-e-suv-urus-supera-15-mil-unidades-e-vira-o-maior-lamborghini-da-historia/#:~:text=O%20Urus%20tem%20um%20motor,SUVs%20mais%20r%C3%A1pidos%20do%20mercado."
+                        target="_blank"><img
+                            src="https://carroesporteclube.com.br/wp-content/uploads/2021/07/Lamborghini-Urus.jpg"
+                            class="d-block w-100" alt="Urus"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.ford.com/cars/mustang/models/gt-fastback/" target="_blank"><img
+                            src="https://hips.hearstapps.com/hmg-prod/images/2022-ford-mustang-shelby-gt500-02-1636734552.jpg"
+                            class="d-block w-100" alt="MustangGT"></a>
+                </div>
+            </div>
+            <!-- Mudança de Fase -->
+            <div class="botoes-carrossel">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
         </div>
-        <!-- Primeiro Slide -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="https://motortudo.com/maverick-1974-ano-em-que-a-industria-automobilistica-pegou-fogo/"
-                    target="_blank"><img src="imagens/Maverick.jpeg" class="d-block w-100" alt="Maverick"></a>
-            </div>
-            <div class="carousel-item">
-                <a href="https://carroesporteclube.com.br/capa/tudo-e-suv-urus-supera-15-mil-unidades-e-vira-o-maior-lamborghini-da-historia/#:~:text=O%20Urus%20tem%20um%20motor,SUVs%20mais%20r%C3%A1pidos%20do%20mercado."
-                    target="_blank"><img src="imagens/Urus.jpg" class="d-block w-100" alt="Urus"></a>
-            </div>
-            <div class="carousel-item">
-                <a href="https://www.ford.com/cars/mustang/models/gt-fastback/" target="_blank"><img
-                        src="imagens/Mustang.jpg" class="d-block w-100" alt="MustangGT"></a>
-            </div>
-        </div>
-        <!-- Mudança de Fase -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div> <br>
 
     <!-- CATEGORIAS -->
@@ -78,31 +87,31 @@
 
     <main>
         <div class="categoria-container">
-            <div class="card">
+            <div class="card-cat">
                 <img src="https://catalogo.webmotors.com.br/imagens/prod/fotos-temas/CardMobile/2a667fa2-1a9a-46e4-ac99-604fb9727e3c_CardMobile.jpg?s=fill&w=274&h=216&q=70"
                     alt="SUVs"> </a>
                 <h3>SUVs</h3> 
             </div>
 
-            <div class="card">
+            <div class="card-cat">
                 <img src="https://catalogo.webmotors.com.br/imagens/prod/fotos-temas/CardMobile/332fd63d-4606-4721-a33a-f16a19a32879_CardMobile.jpg?s=fill&w=274&h=216&q=70"
                     alt="Hatches">
                 <h3>Hatches</h3>
             </div>
 
-            <div class="card">
+            <div class="card-cat">
                 <img src="https://catalogo.webmotors.com.br/imagens/prod/fotos-temas/CardMobile/e4a07180-022a-4088-875a-1fbb572e0961_CardMobile.jpg?s=fill&w=274&h=216&q=70"
                     alt="Picapes">
                 <h3>Picapes</h3>
             </div>
 
-            <div class="card">
+            <div class="card-cat">
                 <img class="img04" src="https://quatrorodas.abril.com.br/wp-content/uploads/2018/08/lamborghini-aventador-svj-8.jpg?quality=70&strip=info"
                     alt="Espotivos">
                 <h3>Espotivos</h3>
             </div>
 
-            <div class="card">
+            <div class="card-cat">
                 <img src="https://catalogo.webmotors.com.br/imagens/prod/fotos-temas/CardMobile/d0919749-11c6-42d4-9e54-1feb3444b726_CardMobile.jpg?s=fill&w=274&h=216&q=70"
                     alt="Sedans">
                 <h3>Sedans</h3>
