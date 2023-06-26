@@ -1,10 +1,44 @@
 body {
-  background-color: whitesmoke;
+  background-color: #cdcbcb;
 }
 
-.header{
-  
+.header {
+  color: whitesmoke;
 }
+
+.head-confirm {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+}
+
+.head-confirm h1 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.text-confirm {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-decoration-style: none;
+  font-size: 1.0rem;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cancel-button {
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .titulo {
   text-align: left;
   margin-left: 16px;
@@ -15,10 +49,34 @@ body {
 }
 
 .titulo-meio {
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-align: center;
-  color: #6f6f6f;
+  color: #2e2e2e;
   font-size: 1.3rem;
   font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dest-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dest-esq {
+  margin: 0;
+}
+
+.dest-dir {
+  margin: 0;
+}
+
+.total {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 900;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -26,27 +84,11 @@ body {
   text-align: center;
 }
 
-.carrossel.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    margin: 0 auto;
-}
-
-.carrossel {
-    padding: 0%;
-    max-width: 650px;
-    max-height: 400px;
-    margin: 0 auto;
-    position: relative;
-}
-
 .botoes-carrossel {
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .shopcar {
@@ -55,10 +97,23 @@ body {
   gap: 5px;
 }
 
+.card {
+  align-items: center;
+}
+
 .card-group {
   gap: 10px;
   padding-bottom: 10px;
 }
+
+.card img {
+  max-width: 95%;
+  max-height: 290px;
+  height: auto;
+  display: flex;
+  object-fit: cover;
+}
+
 
 .categoria-container {
   display: flex;
@@ -111,11 +166,105 @@ body {
   font-size: 2vw;
 }
 
+.card-pesq {
+  position: relative;
+  flex-basis: 20%;
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  align-content: space-between;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-pesq img {
+  padding: 0;
+  max-height: 240px;
+  max-width: 240px;
+  border-radius: 8px;
+  background-color: white;
+  display: block;
+  bottom: 0px;
+}
+
+.card-pesq h3 {
+  position: relative;
+  top: 3%;
+  left: 5%;
+  margin: 0;
+  padding: 0px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2vw;
+}
+
 .header img {
   margin-right: 10px;
-  /* Espaço entre a imagem e o texto */
 }
 
 .navbar-brand {
   padding-left: 12px;
+}
+
+.redondo {
+  border-radius: 2%;
+}
+
+.container-confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.centrobotao {
+  
+  align-items: center;
+  padding-top: 10px;
+}
+
+.custom-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.custom-card {
+  max-width: 200px;
+}
+
+.custom-card .card-body {
+  padding: 10px;
+}
+
+.alinhamento {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.custom-btn {
+  background-color: black;
+}
+
+td {
+  text-align: center;
+}
+
+footer {
+  background-color: #dfdfdf;
+  color: black;
+  text-align: center;
+  position: fixed;
+  height: 20px;
+  padding-bottom: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }

@@ -2,102 +2,278 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="imagem/png" href="./imagens/Logoestige.png.png" />
-    <title>Compra de Carros</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="imagem/png" href="./imagens/Logoestige.png.png" />
+  <title>Compra de Carros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- Cabeçalho do site -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <img src="./imagens/Logoestige.png.png" alt="Imagem" width="40px" height="40px">
-                <a class="navbar-brand" href="https://pt.wikipedia.org/wiki/Estige">Estige MotoSport</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                        <a class="nav-link" href="./conta.html">Conta</a>
-                        <a class="nav-link" href="./compra.html">Comprar</a>
-                        <a class="nav-link" href="./venda.html">Vender</a>
-                        <a class="nav-link disabled">Tudo sobre carros</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="./imagens/Logoestige.png.png" alt="Imagem" width="40px" height="40px">
+        <a class="navbar-brand" href="https://pt.wikipedia.org/wiki/Estige" target="_blank">Estige MotoSport</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link" href="./conta.html">Login</a>
+            <a class="nav-link" href="./compra.html">Disponíveis</a>
+            <a class="nav-link" href="./venda.html">Vender</a>
+            <a class="nav-link disabled">Tudo sobre carros</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <!-- Carros com imagens -->
   <div class="card-group">
     <div class="card">
-      <a href="https://www.ford.com.br/performance/mustang/conheca-a-versao/mustang-mach-1/" target="_blank"><img src="https://revistacarro.com.br/wp-content/uploads/2021/04/Mustang-Mach-1_5.jpg" class="card-img-top" alt="..."></a>
+      <a href="https://www.ford.com.br/performance/mustang/conheca-a-versao/mustang-mach-1/" target="_blank"><img
+          src="https://revistacarro.com.br/wp-content/uploads/2021/04/Mustang-Mach-1_5.jpg" class="card-img-top"
+          alt="..."></a>
       <div class="card-body">
         <h5 class="card-title">Mustang March 1 2023</h5>
-        <p class="card-text">Vai além do design retrô, ímã da atenção nas ruas, de recursos como o line lock (“borrachão” controlado) ou de oferecer o mesmo desempenho do 911 Carrera por R$ 150 mil a menos. O que mais nos agradou foi a mecânica também retrô: tração traseira e motor V8 Coyote 5.0 sem turbo, eletrificação ou truques, que entrega brutalidade pura e sonoridade incomparável.</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-        <p class="card-text"><small class="text-body-secondary">atualizado a três minutos atrás</small></p>
+        <p class="card-text">Vai além do design retrô, ímã da atenção nas ruas, de recursos como o line lock
+          (“borrachão” controlado) ou de oferecer o mesmo desempenho do 911 Carrera por R$ 150 mil a menos. O que mais
+          nos agradou foi a mecânica também retrô: tração traseira e motor V8 Coyote 5.0 sem turbo, eletrificação ou
+          truques, que entrega brutalidade pura e sonoridade incomparável.</p>
+
+
+        <!--botao de compra -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          comprar
+        </button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Compra</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Você deseja finalizar a compra? (ao confirmar o valor será cobrado automaticamente).
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar navegando</button>
+                <button type="button" class="btn btn-primary"><a href="https://getbootstrap.com/docs/5.3/components/modal/#exampleModalPopovers">Comprar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim da confirmação -->
+
+        <p class="card-text"><small class="text-body-secondary">Atualizado Recentemente</small></p>
       </div>
     </div>
-    
+
     <div class="card">
-      <a href="https://www.noticiasautomotivas.com.br/golf-2020/" target="_blank"><img src="https://i.pinimg.com/736x/08/d2/68/08d26881a1c460686de100b0354478b3.jpg" class="card-img-top" alt="..."></a>
+      <a href="https://www.noticiasautomotivas.com.br/golf-2020/" target="_blank"><img
+          src="https://i.pinimg.com/736x/08/d2/68/08d26881a1c460686de100b0354478b3.jpg" class="card-img-top"
+          alt="..."></a>
       <div class="card-body">
         <h5 class="card-title">Golf GTE 2020</h5>
-        <p class="card-text">O Golf GTE é um híbrido plug-in, ou seja, sua bateria é maior e mais potente do que dos híbridos convencionais. Isso lhe proporciona uma autonomia e velocidade maiores quando utilizado apenas o propulsor elétrico.</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-        <p class="card-text"><small class="text-body-secondary">atualizado a três minutos atrás</small></p>
+        <p class="card-text">O Golf GTE é um carro híbrido plug-in da Volkswagen, com um motor a gasolina e um motor
+          elétrico. Ele oferece um desempenho ágil, autonomia elétrica de até 50 km e modos de condução diferentes. Além
+          disso, possui um design esportivo, interior tecnológico e pode ser carregado na tomada. É uma opção eficiente
+          e com baixas emissões.</p>
+        <!--botao de compra -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          comprar
+        </button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Compra</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Você deseja finalizar a compra? (ao confirmar o valor será cobrado automaticamente).
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar navegando</button>
+                <button type="button" class="btn btn-primary"><a class="" href="https://getbootstrap.com/docs/5.3/components/modal/#exampleModalPopovers">Comprar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim da confirmação -->
+        <p class="card-text"><small class="text-body-secondary">Atualizado Recentemente</small></p>
       </div>
     </div>
     <div class="card">
-      <a href="https://autoesporte.globo.com/carros/noticia/2017/06/dodge-challenger-srt-hellcat-ganha-carroceria-alargada-na-linha-2018.ghtml" target="_blank"><img src="https://s2.glbimg.com/TWTIa4BmTaTNt4-4rjVvJfmna7Y=/0x0:620x380/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/z/F/D1PsAHQ4Oaq1jKUD0Nxw/2014-07-03-dodge-challenger-srt-hellcat-2015-800x600-wallpaper-04.jpg" class="card-img-top" alt="..."></a>
+      <a href="https://autoesporte.globo.com/carros/noticia/2017/06/dodge-challenger-srt-hellcat-ganha-carroceria-alargada-na-linha-2018.ghtml"
+        target="_blank"><img
+          src="https://s2.glbimg.com/TWTIa4BmTaTNt4-4rjVvJfmna7Y=/0x0:620x380/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/z/F/D1PsAHQ4Oaq1jKUD0Nxw/2014-07-03-dodge-challenger-srt-hellcat-2015-800x600-wallpaper-04.jpg"
+          class="card-img-top" alt="..."></a>
       <div class="card-body">
         <h5 class="card-title">Chalenger SRT Hellcat 2018</h5>
-        <p class="card-text">O Dodge Challenger SRT Demon é uma lenda entre os muscle cars. Na época de seu lançamento, em 2018, o veículo era um dos mais rápidos do mundo, acelerando de 0 a 96 km/h (0 a 60 mph) em apenas 2,3 segundos. Tão impressionante quanto, era o seu tempo no quarto-de-milha, concluído em apenas 9,65 segundos.</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-        <p class="card-text"><small class="text-body-secondary">atualizado a três minutos atrás</small></p>
+        <p class="card-text">O Dodge Challenger SRT Demon é uma lenda entre os muscle cars. Na época de seu lançamento,
+          em 2018, o veículo era um dos mais rápidos do mundo, acelerando de 0 a 96 km/h (0 a 60 mph) em apenas 2,3
+          segundos. Tão impressionante quanto, era o seu tempo no quarto-de-milha, concluído em apenas 9,65 segundos.
+        </p>
+        <!--botao de compra -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Comprar
+        </button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Compra</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Você deseja finalizar a compra? (ao confirmar o valor será cobrado automaticamente).
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar navegando</button>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim da confirmação -->
+        <p class="card-text"><small class="text-body-secondary">Atualizado Recentemente</small></p>
       </div>
     </div>
   </div>
 
   <div class="card-group">
     <div class="card">
-      <a href="https://www.honda.com.br/automoveis/civic-typer?utm_source=google-search&utm_medium=cpc&utm_content=pbc_hab_civic-type-r-lancamento2023-100ki_autos_search_awareness_google-ads_google-search_search-network_links-patrocinados|_cpc_-|categoria,concorrentes|ofertas|-|-|categoria,concorrentes|ofertas|-_produto_nd_nd_civic-type-r_sport_nd_saiba-mais_05-06-2023_texto-oferta&utm_campaign=pbc_hab_civic-type-r-lancamento2023-100ki_autos_search_awareness_google-ads_google-search_search-network_links-patrocinados_cpc_-|categoria,concorrentes|ofertas|-_produto&gclid=CjwKCAjw-b-kBhB-EiwA4fvKrKSqMaLXeh0HAo0ku3KOTm_QW5aTYWU_OvjmYqgEmPUM8MVBUXHc0hoCMMcQAvD_BwE" target="_blank"><img src="https://imgsrv2.voi.id/u12JL2JDxfHUU5QsIQDBF-Txlq0Yd38M1iZXKUgcHhk/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8yNjcwNDYvMjAyMzAzMjcxMTQxLW1vYmlsZS5jcm9wcGVkXzE2Nzk4OTIxODEuanBlZw.jpg" class="card-img-top" class="card-img-top" alt="..."></a>
+      <a href="https://www.honda.com.br/automoveis/civic-typer?utm_source=google-search&utm_medium=cpc&utm_content=pbc_hab_civic-type-r-lancamento2023-100ki_autos_search_awareness_google-ads_google-search_search-network_links-patrocinados|_cpc_-|categoria,concorrentes|ofertas|-|-|categoria,concorrentes|ofertas|-_produto_nd_nd_civic-type-r_sport_nd_saiba-mais_05-06-2023_texto-oferta&utm_campaign=pbc_hab_civic-type-r-lancamento2023-100ki_autos_search_awareness_google-ads_google-search_search-network_links-patrocinados_cpc_-|categoria,concorrentes|ofertas|-_produto&gclid=CjwKCAjw-b-kBhB-EiwA4fvKrKSqMaLXeh0HAo0ku3KOTm_QW5aTYWU_OvjmYqgEmPUM8MVBUXHc0hoCMMcQAvD_BwE"
+        target="_blank"><img
+          src="https://imgsrv2.voi.id/u12JL2JDxfHUU5QsIQDBF-Txlq0Yd38M1iZXKUgcHhk/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8yNjcwNDYvMjAyMzAzMjcxMTQxLW1vYmlsZS5jcm9wcGVkXzE2Nzk4OTIxODEuanBlZw.jpg"
+          class="card-img-top" class="card-img-top" alt="..."></a>
       <div class="card-body">
         <h5 class="card-title">Civic Type R 2023</h5>
-        <p class="card-text">A Honda declara que o Civic Type R é o carro de tração dianteira mais rápido do mundo. Eu duvido. Se fosse, não teria demorado tanto tempo para chegar ao Brasil. Mas, recalque meu à parte, essa autointitulada honraria se dá porque o carro aí das fotos é detentor do recorde de velocidade na pista de Nürburgring em sua categoria: 7 minutos e 44 segundos.</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-        <p class="card-text"><small class="text-body-secondary">atualizado a três minutos atrás</small></p>
+        <p class="card-text">A Honda declara que o Civic Type R é o carro de tração dianteira mais rápido do mundo. Eu
+          duvido. Se fosse, não teria demorado tanto tempo para chegar ao Brasil. Mas, recalque meu à parte, essa
+          autointitulada honraria se dá porque o carro aí das fotos é detentor do recorde de velocidade na pista de
+          Nürburgring em sua categoria: 7 minutos e 44 segundos.</p>
+        <!--botao de compra -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          comprar
+        </button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Compra</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Você deseja finalizar a compra? (ao confirmar o valor será cobrado automaticamente).
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar navegando</button>
+                <button type="button" class="btn btn-primary"><a
+                    href="https://getbootstrap.com/docs/5.3/components/modal/#exampleModalPopovers">Comprar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim da confirmação -->
+        <p class="card-text"><small class="text-body-secondary">Atualizado Recentemente</small></p>
       </div>
     </div>
     <div class="card">
-      <a href="https://www.car.blog.br/2012/12/lamborghini-gallardo-lp560-4-2010-usada.html#:~:text=A%20constru%C3%A7%C3%A3o%20do%20Lamborghini%20Gallardo,integrados%20para%20formar%20o%20corpo." target="_blank"><img src="https://www.planetcarsz.com/assets/uploads/2015/01/LAMBORGHINI%20GALLARDO%20LP560%204%20ENCO%202010%206.jpg" class="card-img-top" alt="..."></a>
+      <a href="https://www.car.blog.br/2012/12/lamborghini-gallardo-lp560-4-2010-usada.html#:~:text=A%20constru%C3%A7%C3%A3o%20do%20Lamborghini%20Gallardo,integrados%20para%20formar%20o%20corpo."
+        target="_blank"><img
+          src="https://ag-spots-2018.o.auroraobjects.eu/2018/01/27/lamborghini-gallardo-lp560-4-2013-c283427012018055108_1.jpg"
+          class="card-img-top" alt="..."></a>
       <div class="card-body">
         <h5 class="card-title">Gallardo LP560-4 2010</h5>
-        <p class="card-text">Utiliza o que é conhecido como um "método de construção spaceframe". Elementos de nó integralmente moldadas e peças extrudidas criar a sua estrutura e as placas de chapa feitos a partir de alumínio ter sido perfeitamente e firmemente integrados para formar o corpo.</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-        <p class="card-text"><small class="text-body-secondary">atualizado a três minutos atrás</small></p>
+        <p class="card-text">Utiliza o que é conhecido como um "método de construção spaceframe". Elementos de nó
+          integralmente moldadas e peças extrudidas criar a sua estrutura e as placas de chapa feitos a partir de
+          alumínio ter sido perfeitamente e firmemente integrados para formar o corpo.</p>
+        <!--botao de compra -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          comprar
+        </button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Compra</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Você deseja finalizar a compra? (ao confirmar o valor será cobrado automaticamente).
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar navegando</button>
+                <button type="button" class="btn btn-primary"><a
+                    href="https://getbootstrap.com/docs/5.3/components/modal/#exampleModalPopovers">Comprar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim da confirmação -->
+        <p class="card-text"><small class="text-body-secondary">Atualizado Recentemente</small></p>
       </div>
     </div>
     <div class="card">
-      <a href="https://www.bmw.com.br/pt/all-models/m-series/m3-sedan/2020/bmw-serie-3-berlina-versao-m-visao-geral.html?tl=sea-goog-saoe-brnd-miy-bmcw-sear-consider-.-.-b2a92c5322bb&gclid=EAIaIQobChMI75nOvbjX_wIVkTbUAR1kDgULEAAYASAAEgL3d_D_BwE" target="_blank"><img src="https://images.carexpert.com.au/crop/1200/630/vehicles/source-g/6/e/6e24bc29.jpg" class="card-img-top" alt="..."></a>
+      <a href="https://www.bmw.com.br/pt/all-models/m-series/m3-sedan/2020/bmw-serie-3-berlina-versao-m-visao-geral.html?tl=sea-goog-saoe-brnd-miy-bmcw-sear-consider-.-.-b2a92c5322bb&gclid=EAIaIQobChMI75nOvbjX_wIVkTbUAR1kDgULEAAYASAAEgL3d_D_BwE"
+        target="_blank"><img
+          src="https://quatrorodas.abril.com.br/wp-content/uploads/2021/04/BMW-M3-e1617754385435.jpeg?quality=70&strip=info"
+          class="card-img-top" alt="M3 competition"></a>
       <div class="card-body">
         <h5 class="card-title">M3 Competition 2023</h5>
-        <p class="card-text">O M3 Competition 2023 é uma versão esportiva da Série 3 da BMW, sendo um sedan esportivo, que traz um visual agressivo e muito bonito, além de tudo ele conta com um desempenho fenomenal digno de um carro esportivo.</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-        <p class="card-text"><small class="text-body-secondary">atualizado a três minutos atrás</small></p>
+        <p class="card-text">O M3 Competition 2023 é uma versão esportiva da Série 3 da BMW, sendo um sedan esportivo,
+          que traz um visual agressivo e muito bonito, além de tudo ele conta com um desempenho fenomenal digno de um
+          carro esportivo.</p>
+        <!--botao de compra -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          comprar
+        </button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Compra</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Você deseja finalizar a compra? (ao confirmar o valor será cobrado automaticamente).
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar navegando</button>
+                <button type="button" class="btn btn-primary"><a
+                    href="https://getbootstrap.com/docs/5.3/components/modal/#exampleModalPopovers">Comprar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim da confirmação -->
+        <p class="card-text"><small class="text-body-secondary">Atualizado Recentemente</small></p>
       </div>
     </div>
   </div>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+
+  <footer>
+    <p>Estige MotoSport LTDA &copy;</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
